@@ -19,7 +19,7 @@ mask_path = f"./masks/{os.path.basename(image_path).split('.')[0]}/mask.png"
 os.makedirs(os.path.dirname(mask_path), exist_ok=True)
 cv2.imwrite(mask_path, mask)
 
-# 3. 调用LaMa修复（修正参数名称）
+# 3. inpaint
 subprocess.run([
     "python",
     "../Inpaint-Anything/lama_inpaint.py",
