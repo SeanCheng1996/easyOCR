@@ -47,3 +47,9 @@ Put the contents under:
 Now, you are able to run the step3.
 
 You will see a "masks" folder and a "results" folder generated.
+
+# 4. Example
+Original Image: <img src="./examples/dog_texts.jpg">
+Word bounding box: <img src="./usage_example/word_bbox/dog_texts/img_bbox.png">
+Mask Image: <img src="./usage_example/masks/dog_texts/mask.png">
+Filled Image: <img src="./usage_example/results/dog_texts/inpainted_with_mask.png">

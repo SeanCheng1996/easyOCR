@@ -15,7 +15,7 @@ image = cv2.imread(str(image_path))
 mask = np.zeros(image.shape[:2], dtype=np.uint8)
 for (points, _, _) in results:
     cv2.fillPoly(mask, [np.array(points, dtype=np.int32)], 255)
-mask_path = f"./masks/{os.path.basename(image_path)}/mask.png"
+mask_path = f"./masks/{os.path.basename(image_path).split('.')[0]}/mask.png"
 os.makedirs(os.path.dirname(mask_path), exist_ok=True)
 cv2.imwrite(mask_path, mask)
 
