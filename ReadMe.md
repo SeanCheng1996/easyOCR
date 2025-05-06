@@ -1,6 +1,5 @@
 This repo is for a tutorial environment setup and usage for word detection and inpainting for the word.
 The model is [EasyOCR](https://github.com/JaidedAI/EasyOCR) and [Inpaint-Anything](https://github.com/geekyutao/Inpaint-Anything?tab=readme-ov-file).
-1
 
 # 1. Create Conda Environment
 > conda create -n easyocr python=3.10
